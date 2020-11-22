@@ -5,7 +5,7 @@ import classNames from 'classnames/bind';
 import styles from './Registration.module.css';
 
 let cx = classNames.bind(styles);
-const url = 'http://localhost:3001';
+const url = 'https://chat-api-picsart.herokuapp.com';
 
 const Registration = () => {
   const [fields, setFields] = useState({

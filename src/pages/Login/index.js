@@ -5,7 +5,7 @@ import classNames from 'classnames/bind';
 import styles from './Login.module.css';
 
 const cx = classNames.bind(styles);
-const apiUrl = 'http://localhost:3001';
+const apiUrl = 'https://chat-api-picsart.herokuapp.com';
 
 const Login = () => {
   const [fields, setFields] = useState({
