@@ -16,6 +16,9 @@ const Chat = () => {
 
   const socketRef = useRef(
     io('https://chat-socket-picsart.herokuapp.com', {
+      cors: {
+        origin: 'https://chat-socket-picsart.herokuapp.com'
+      },
       query: { token }
     })
   );
