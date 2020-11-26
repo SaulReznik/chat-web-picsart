@@ -15,10 +15,7 @@ const Chat = () => {
   const [isConnected, setIsConnected] = useState(false);
 
   const socketRef = useRef(
-    io('https://chat-socket-picsart.herokuapp.com', {
-      cors: {
-        origin: 'https://chat-socket-picsart.herokuapp.com'
-      },
+    io('https://chat-socket-picsartt.herokuapp.com', {
       query: { token }
     })
   );
