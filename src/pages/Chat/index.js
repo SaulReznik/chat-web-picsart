@@ -15,7 +15,7 @@ const Chat = () => {
   const [isConnected, setIsConnected] = useState(false);
 
   const socketRef = useRef(
-    io('wss://chat-socket-picsart.herokuapp.com', {
+    io('https://chat-socket-picsart.herokuapp.com', {
       query: { token }
     })
   );
