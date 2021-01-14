@@ -2,10 +2,10 @@ import { useState, useCallback } from 'react';
 import { useHistory, Link } from 'react-router-dom';
 import classNames from 'classnames/bind';
 
+import { API_URL } from '../../config';
 import styles from './Login.module.css';
 
 const cx = classNames.bind(styles);
-const apiUrl = 'https://chat-api-picsart.herokuapp.com';
 
 const Login = () => {
   const [fields, setFields] = useState({
@@ -36,7 +36,7 @@ const Login = () => {
         e.preventDefault();
         const body = JSON.stringify(fields);
 
-        const response = await fetch(`${apiUrl}/signin`, {
+        const response = await fetch(`${API_URL}/signin`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'

@@ -1,0 +1,1 @@
+export const API_URL = 'https://chat-api-picsart.herokuapp.com';
